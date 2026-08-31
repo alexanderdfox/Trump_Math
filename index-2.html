@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Economic Plan White Papers — Index</title>
+  <style>
+    :root {
+      --bg: #eae8e2;
+      --card: #fdfdfb;
+      --ink: #1a1a1a;
+      --muted: #5c5c5c;
+      --accent1: #1e3a5f;   /* Trump / original */
+      --accent2: #3d2b1f;   /* Opposite */
+      --accent3: #2c4a3e;   /* Hybrid */
+      --border: #d0d0c8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header .label {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    @media (min-width: 720px) {
+      .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 28px 24px 26px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.11);
+    }
+
+    .card .tag {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .card.trump .tag { color: var(--accent1); }
+    .card.opposite .tag { color: var(--accent2); }
+    .card.hybrid .tag { color: var(--accent3); }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .card.trump h2 { color: var(--accent1); }
+    .card.opposite h2 { color: var(--accent2); }
+    .card.hybrid h2 { color: var(--accent3); }
+
+    .card p {
+      font-size: 14.5px;
+      color: var(--muted);
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .card .cta {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .card.trump .cta { color: var(--accent1); }
+    .card.opposite .cta { color: var(--accent2); }
+    .card.hybrid .cta { color: var(--accent3); }
+
+    .card .cta span {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    .card:hover .cta span {
+      transform: translateX(4px);
+    }
+
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="label">Conceptual Series</div>
+      <h1>Economic Plan White Papers</h1>
+      <p class="intro">
+        Three parallel frameworks exploring an America-First agenda, its complete inversion, and a pragmatic hybrid of the two.
+      </p>
+    </header>
+
+    <div class="cards">
+      <!-- Original / Trump -->
+      <a class="card trump" href="trump-economic-plan-whitepaper.html">
+        <div class="tag">Plan A</div>
+        <h2>Trump Economic Plan</h2>
+        <p>
+          Tax relief, reciprocal tariffs, energy dominance, deregulation, controlled labor markets, and domestic-priority innovation — structured as both a tree and a circle, with an ELI5 explanation of how the pillars reinforce each other.
+        </p>
+        <div class="cta">Open white paper <span>→</span></div>
+      </a>
+
+      <!-- Opposite -->
+      <a class="card opposite" href="opposite-economic-plan-whitepaper.html">
+        <div class="tag">Plan B</div>
+        <h2>Complete Opposite Plan</h2>
+        <p>
+          The deliberate mirror image: higher taxes and redistribution, open trade, green-energy prioritization, expanded regulation, higher immigration with broader benefits, and globalized technology rules.
+        </p>
+        <div class="cta">Open white paper <span>→</span></div>
+      </a>
+
+      <!-- Hybrid -->
+      <a class="card hybrid" href="hybrid-economic-plan-whitepaper.html">
+        <div class="tag">Plan C</div>
+        <h2>Hybrid Economic Plan</h2>
+        <p>
+          A selective synthesis: balanced tax incentives, targeted reciprocal trade, all-of-the-above energy, smart regulation, controlled immigration with work focus, and domestic-priority innovation with global links.
+        </p>
+        <div class="cta">Open white paper <span>→</span></div>
+      </a>
+    </div>
+
+    <footer>
+      Conceptual documents for illustration only.<br>
+      August 2026
+    </footer>
+  </div>
+</body>
+</html>
